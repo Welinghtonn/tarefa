@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background-image: url(../foto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: #01014b;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container{
+    background-color: rgba(240,248,255, 0.9);
+    height: 70vh;
+    width: 80%;
+    border: solid black 2px;
+    padding: 1rem;
+}
+
+.title{
+    padding: 7px;
+    width: 100%;
+    border-bottom: solid 2px black;
+}
+
+.Exercicio4{
+    display: none;
+}
