@@ -11,12 +11,15 @@ function exercicio1(){
         <p>A sua nota: ${nota}</p>
     `
 }
+function exercicio2() {
+    var numero = 10;
 
-function exercicio2(){
-    var numero = 10
-
-    while(numero > 0){
-        
+    while (numero > 1) {
+        numero--;
+        document.getElementById("root").style.display = "block";
+        document.getElementById("root").innerHTML = `
+            <p>Time: ${numero}</p>
+        `;
     }
 }
 
