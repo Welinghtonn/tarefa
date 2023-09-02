@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
+    color: #01014b;
 }
 
 body{
@@ -23,16 +24,22 @@ body{
 .menu{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 70%;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 button{
     padding: 10px;
     border: none;
-    background-color: #01014b;
+    background-color: rgba(240,248,255, 0.9);
     cursor: pointer;
-    color: #fff;
+    border: solid black 2px;    
+}
+
+button:hover{
+    background-color: rgba(240,248,255, 0.7);
 }
 
 .container{

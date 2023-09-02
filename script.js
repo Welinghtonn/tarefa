@@ -14,12 +14,10 @@ function exercicio1(){
 function exercicio2() {
     var numero = 10;
 
-    while (numero > 1) {
-        numero--;
+    while (numero > 0) {
+        numero --;
         document.getElementById("root").style.display = "block";
-        document.getElementById("root").innerHTML = `
-            <p>Time: ${numero}</p>
-        `;
+        document.getElementById("root").innerHTML = `<p>Time: ${numero}</p>`;
     }
 }
 
