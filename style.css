@@ -7,6 +7,7 @@
     font-family: 'Rubik', sans-serif;
     overflow: hidden;
     color: 	#A020F0;
+    user-select: none;
 }
 
 body{
@@ -51,27 +52,35 @@ button:hover{
 }
 
 .title{
-    padding: 7px;
     width: 100%;
     border-bottom: solid 2px #A020F0;
 }
 
 .Exercicio4{
     display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    height: 25%;
 }
 
-.phrase {
-    position: absolute;
-    color: #A020F0;
-    animation: scroll 35s 1s linear infinite;
-  }
+input{
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+    border: none;
+    background-color: rgba(159, 31, 239, 0.3);
+    border-bottom: solid #A020F0 3px;
+    outline: none;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 
-@keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
+.soma{
+    border-radius: 4px;
+    padding: 4px;
+    width: 25%;
+}
