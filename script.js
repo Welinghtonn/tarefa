@@ -1,12 +1,11 @@
-
 function exercicio1() {
 	var nota = parseInt(prompt("Digite um numero"));
 
 	while (nota < 0 || nota > 10) {
 		nota = parseInt(prompt("Digite novamente a nota"));
 	}
-	document.getElementById("root").style.display = "block"
-	document.getElementById("root").innerHTML = `<p>A sua nota: ${nota}</p>`;
+	document.getElementById("root1").style.display = "block"
+	document.getElementById("root1").innerHTML = `<p>A sua nota: ${nota}</p>`;
 }
 
 function exercicio2() {
@@ -14,12 +13,12 @@ function exercicio2() {
 
 	const intervalo = setInterval(() => {
 		numero--
-		document.getElementById("root").style.display = "block"
-		document.getElementById("root").innerHTML = `<p>Natal em: ${numero}</p>`;
+		document.getElementById("root2").style.display = "block"
+		document.getElementById("root2").innerHTML = `<p>Natal em: ${numero}</p>`;
 
 		if (numero === 0) {
 			fecharintervalo();
-			document.getElementById("root").innerHTML = `<p>Feliz Natal!!!!!!</p>`;
+			document.getElementById("root2").innerHTML = `<p>Feliz Natal!!!!!!</p>`;
 		}
 	}, 1000)
 
@@ -33,6 +32,7 @@ function exercicio3() {
 	var BOM = prompt("Senha");
 
 	if (OI === "" & BOM === "") {
+		console.log("dghkj")
 	} else {
 		while (OI === BOM) {
 			alert("Os campos estão iguais")
@@ -40,14 +40,16 @@ function exercicio3() {
 				BOM = prompt("Senha");
 		}
 		if(OI != BOM) {
-			document.getElementById("root").style.display = "block"
-			document.getElementById("root").innerHTML = `<p>${OI} ${BOM}</p>`;
+			document.getElementById("root3").style.display = "block"
+			document.getElementById("root3").innerHTML = `${OI}${BOM}`;
 		}
 	}
 }
 
+var exercicio4 = document.getElementById("Exercicio4")
+
 function showExercicio4() {
-	var exercicio4 = document.getElementById("Exercicio4").style.display = "flex"
+	exercicio4.style.display = "flex"
 }
 
 function somaExercio4() {
@@ -56,11 +58,15 @@ function somaExercio4() {
 
 	var resultado = parseInt(num1) + parseInt(num2);
 
-	document.getElementById("root").style.display = "block"
-	document.getElementById("root").innerHTML = resultado;
+	document.getElementById("root4").style.display = "block"
+	document.getElementById("root4").innerHTML = resultado;
 }
 
 function limpar() {
-
+	document.getElementById("root1").style.display = "none"
+	document.getElementById("root2").style.display = "none"
+	document.getElementById("root3").style.display = "none"
+	document.getElementById("root4").style.display = "none"
+	exercicio4 = document.getElementById("Exercicio4").style.display = "none"
 }
 
