@@ -16,7 +16,7 @@ function exercicio2() {
   intervalo = setInterval(() => {
     numero--
     document.getElementById("root2").style.display = "block"
-    document.getElementById("root2").innerHTML = `<p>Natal em: ${numero}</p>`;
+    document.getElementById("root2").innerHTML = `<p>Ano Novo em: ${numero}</p>`;
 
     if (numero === 0) {
       fecharintervalo();
